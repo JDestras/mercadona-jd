@@ -76,7 +76,7 @@ def discount_pre_save(sender, instance, **kwargs):
 class Event(models.Model):
     name = models.CharField(max_length=50)
     text = models.TextField(blank=True)
-    image = models.ImageField(upload_to="home", blank=True, null=True)
+    image = models.ImageField(upload_to="img/home", blank=True, null=True)
     image_title = models.CharField(max_length=100, blank=True)
     active = models.BooleanField(default=True)
 

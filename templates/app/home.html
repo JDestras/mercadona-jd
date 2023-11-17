@@ -13,7 +13,7 @@
 <!-- carousel Bootstrap-->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="{% static 'img/home/home.jpg' %}" alt="Fruits and vegetables in a supermarket">  
+                <img class="d-block w-100" src="{% static 'catalog/img/home/home.jpg' %}" alt="Fruits and vegetables in a supermarket">  
                 <div class="carousel-caption d-md-block">
                     <h3>Carefully selected products all year round</h3> 
                 </div>
@@ -21,7 +21,7 @@
         {% for event in events %}
             {% if event.active %}
             <div class="carousel-item">
-                <img class="d-block w-100" src="{% static 'img/' %}{{ event.image }}" alt="{{ event.name }}" title="{{ event.title }}">
+                <img class="d-block w-100" src="{% static 'catalog/img/' %}{{ event.image }}" alt="{{ event.name }}" title="{{ event.title }}">
                 <div class="carousel-caption d-md-block">
                     <h3>{{ event.text }}</h3>  
                 </div>
