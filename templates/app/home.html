@@ -21,7 +21,7 @@
         {% for event in events %}
             {% if event.active %}
             <div class="carousel-item">
-                <img class="d-block w-100" src="{% static 'catalog/img/home' %}{{ event.image }}" alt="{{ event.name }}" title="{{ event.title }}">
+                <img class="d-block w-100" src="{% static 'catalog/img/home/' %}{{ event.image }}" alt="{{ event.name }}" title="{{ event.title }}">
                 <div class="carousel-caption d-md-block">
                     <h3>{{ event.text }}</h3>  
                 </div>
