@@ -18,6 +18,12 @@
                     <h3>Carefully selected products all year round</h3> 
                 </div>
             </div>
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="{% static 'catalog/img/xmas/.jpg' %}" alt="Christmas decoration">  
+                <div class="carousel-caption d-md-block">
+                    <h3>Mercadona wishes you happy celebrations</h3> 
+                </div>
+            </div>
         {% for event in events %}
             {% if event.active %}
             <div class="carousel-item">
@@ -26,6 +32,7 @@
                     <h3>{{ event.text }}</h3>  
                 </div>
             </div>
+            
             {% endif %}
         {% endfor %}
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
