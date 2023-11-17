@@ -16,7 +16,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
         <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+        <link rel="stylesheet" href="{% static 'catalog/css/style.css' %}"/>
         
     </head>
     <!-- BASE--> 
@@ -26,7 +26,7 @@
     <!-- wrapper => Home -->
             <i class="fa-solid fa-bars" id="menu_icon"></i>
             <a class="logo-wrapper" href="{% url 'home' %}"alt="Home" title="Home"> 
-                <img src="{% static 'img/base/supermarket.png' %}" alt="Logo">  
+                <img src="{% static 'catalog/img/base/supermarket.png' %}" alt="Logo">  
                 <h1 class="app-name">Mercadona</h1>
             </a>
     <!-- menu -->
@@ -55,8 +55,8 @@
             </a>
         </footer> 
     <!-- JS -->
-    <script src="{% static 'js/menu.js' %}"></script>
-    <script src="{% static 'js/catalog.js' %}"></script>
+    <script src="{% static 'catalog/js/menu.js' %}"></script>
+    <script src="{% static 'catalog/js/catalog.js' %}"></script>
     
     </body>
 </html>

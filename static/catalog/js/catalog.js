@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+var staticMediaPath = "";
 
 function fetchProducts(categoryId) {
     fetch('/filtered_products/' + categoryId + '/')
@@ -81,7 +82,7 @@ function updateProductSection(products) {
         if (product.thumbnail_url) {
             var imgElement = document.createElement('img');
             imgElement.classList.add('product-img');
-            imgElement.src = 'static/img/products' + product.thumbnail_url; 
+            imgElement.src = staticMediaPath + product.thumbnail_url;
             imgElement.alt = 'A picture of ' + product.name;
 
             liElement.appendChild(imgElement);

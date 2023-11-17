@@ -24,7 +24,7 @@ class Product(models.Model):
     name = models.CharField(max_length=50)
     categories = models.ManyToManyField(Category, related_name='products')
     description = models.TextField(blank=True)
-    thumbnail = models.ImageField(blank=True, null=True)
+    thumbnail = models.ImageField(blank=True, null=True, upload_to='img/products/')
     initial_price = models.DecimalField(max_digits=10, decimal_places=2,validators=[validate_price])
     
     def __str__(self):

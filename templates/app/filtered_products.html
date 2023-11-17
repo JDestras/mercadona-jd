@@ -21,7 +21,7 @@
                     {% if product.thumbnail.url %}
                     <img 
                     class="product-img" 
-                    src="{% static 'img/products/' %}{{ product.thumbnail }}"
+                    src="{{ product.thumbnail.url }}"
                     alt="A picture of {{ product.name }}">
                     {% endif %}    
                 </li>
@@ -29,21 +29,9 @@
         </article>
     {% endfor %}
 </section>
-{% endblock %}
 
 {% block scripts %}
-<script src="{% static 'js/menu.js' %}"></script> 
-<script src="{% static 'js/catalog.js' %}"></script>  
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var categoryId = {{ category_id }};
-        fetchProducts(categoryId);
-    });
-  </script>
+
+<script src="{% static 'catalog/js/menu.js' %}"></script>
+<script src="{% static 'catalog/js/catalog.js' %}"></script>
 {% endblock %}
-
-
-
-
-
-
